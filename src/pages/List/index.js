@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Container from "../../layout/TabContainer";
-export default class Home extends Component {
+export default class List extends Component {
   render() {
     return (
       <Container>
-        <div>Home</div>
+        <div>List</div>
       </Container>
     );
   }

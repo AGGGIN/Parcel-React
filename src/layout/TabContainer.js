@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import { TabBar } from "antd-mobile";
 import { withRouter } from "react-router-dom";
-import { UserOutlined, HomeOutlined } from "@ant-design/icons";
+import {
+  UserOutlined,
+  HomeOutlined,
+  ContainerOutlined,
+} from "@ant-design/icons";
 
 class TabbarContainer extends Component {
   constructor(props) {
@@ -12,7 +16,6 @@ class TabbarContainer extends Component {
       fullScreen: false,
     };
   }
-
   render() {
     const { children } = this.props;
     const pathname = children.props;
@@ -48,6 +51,11 @@ const Config = [
     title: "首页",
     link: "/",
     icon: <HomeOutlined />,
+  },
+  {
+    title: "列表",
+    link: "/list",
+    icon: <ContainerOutlined />,
   },
   {
     title: "我的",
